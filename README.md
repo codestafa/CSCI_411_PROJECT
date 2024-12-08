@@ -106,7 +106,7 @@ To manage dependencies, create a virtual environment.
 
  - Create the virtual environment:
 
- `virtualenv venv`
+ `virtualenv venv` or `python3 -m virtualenv venv` (whichever one works for you)
 
  ### 5. Activate the Virtual Environment
 
@@ -144,20 +144,21 @@ The test input folder is `test_input`.
 
 To run the program, use the following commands:
 
-- Run tests without generating plots (useful for only testing):
+Run tests without generating plots (useful for only testing):
 
-`python3 project.py test_input test_output --dont_plot`
+    python3 project.py test_input test_output --dont_plot
 
-- Run tests with generating plots for `test_input` folder:
+ Run tests with generating plots for `test_input` folder:
 
-`python3 project.py test_input test_output`
+    python3 project.py test_input test_output
 
-- Run tests with sample rate plot (for downsampling):
+Run tests with sample rate plot (for downsampling):
 
-`python3 project.py test_input test_output --sample_rate_plot`
+    python3 project.py test_input test_output --sample_rate_plot
 
 
 The `--dont_plot` flag prevents the program from generating plots. This is useful when you just want to check if the tests pass or fail.
 The `--sample_rate_plot` flag generates plots for the 48000 Hz WAV file in the sample_rates folder to show how frequencies change as the WAV file is downsampled.
+**Just a heads up, this will generate a lot of plots (around 30).**
 
 
