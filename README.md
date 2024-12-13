@@ -92,7 +92,7 @@ Your folder structure should look like this:
 The `sample_rates` folder will be used to show plots when using different sample rates.
 The `test_input` folder contains input files, which will be compared to the outputs in the test_output folder. The output files are the Fourier transforms computed using the numpy implementation. The inputs are all wave files which will be broken down into signals.
 
-### 4. Create a Virtual Environment
+### 4. Create a Virtual Environment (in the folder of the project)
 
 To manage dependencies, create a virtual environment.
 
